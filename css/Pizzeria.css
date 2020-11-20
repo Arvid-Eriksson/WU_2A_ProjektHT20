@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+}
+
+.gridwrapper {
+display: grid;
+width: 100vw;
+height: 100vh;
+
+grid-template-areas:
+
+    "HN a3 a3 a3 a3"
+    "a1 a2 a2 a2 a4"
+    "a1 a2 a2 a2 a4"
+    "a1 a2 a2 a2 a5"
+    "a1 a2 a2 a2 a5"
+    "fo fo fo fo fo"
+    ;
+    grid-template-columns: repeat(1fr 1fr 1fr 1fr 1fr);
+    grid-template-rows: repeat(1fr 1fr 1fr 1fr 1fr);
+}
+
+.Pizeria{
+    background-color: aqua;
+    grid-area: HN;
+}
+.articel1{
+    background-color: red;
+    grid-area: a1;
+}
+.articel2{
+    background-color: lightcoral;
+    grid-area: a2;
+}
+.articel3{
+    background-color: lightsalmon;
+    grid-area: a3;
+}
+.articel4{
+    background-color: lightseagreen;
+    grid-area: a4;
+}
+.articel5{
+    background-color: lightskyblue;
+    grid-area: a5;
+}
+
+.footer{
+    background-color: mediumspringgreen;
+    grid-area: fo;
+}
