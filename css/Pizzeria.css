@@ -1,64 +1,64 @@
 * {
     margin: 0;
-}
+    padding: 0px;}
 
 .gridwrapper {
 display: grid;
-width: 100vmax;
+width: 98.5vw;
 height: 113vmax;
 background-image: url(../img/patrick-tomasso-QMDap1TAu0g-unsplash.jpg);
 
 grid-template-areas:
-
-    "HN HN a3 a3 a3"
+    "hn hn a3 a3 a3"
     "a1 a2 a2 a2 a4"
-    "a1 a2 a2 a2 a4"
-    "a1 a2 a2 a2 a5"
     "a1 a2 a2 a2 a5"
     "fo fo fo fo fo"
     ;
-    grid-template-columns: (1fr 1fr 1fr 1fr 1fr );
-    grid-template-rows: (1fr 1fr 1fr 1fr );
-    column-gap: 1mm;
+    grid-template-columns: (10% 10% 30% 25% 25% );
+    grid-template-rows: (1fr 1fr 1fr 1fr);
+    column-gap: 5px;
 }
 
 #logga{
-    grid-area: HN;
+    grid-area: hn;
     height: 200px;
-    width: 400px;
+    width: 40%;
 }
 .articel1{
     grid-area: a1;
     height: 100vh;
-    width: 250px;
+    width: 95%;
 }
+
 #Agare{
-    grid-area: a2;
     height: 50vh;
-    width: 300px;
+    width: 250px;
 }
 .articel2{
     grid-area: a2;
     height: 100vh;
-    width: 770px;
+    width: auto;
     background-color: mediumturquoise;
 }
 .articel3{
     grid-area: a3;
     background-color: mediumaquamarine;
-    width: 700px;
+    width: 100%;
     height: 200px;
+    display: block;
 }
 
 .articel4{
     grid-area: a4;
-    height: 100vh;
-    width: 100px;
+    height: 50vh;
+    width: 95%;
     background-color: moccasin;
 }
 .articel5{
     grid-area: a5;
-    
+    height: 50vh;
+    width: 95%;
+    background-color: navajowhite;
 }
 
 .footer{
@@ -66,11 +66,13 @@ grid-template-areas:
     height: 100vh;
     background-color: lightsteelblue;
 }
+
 #logo{
+    grid-area: hn;
     height: 100%;
     width: 100%;
-}
+}    
 #bästa{
     height: 100vh;
-    width: 250px;
+    width: 100%;
 }
