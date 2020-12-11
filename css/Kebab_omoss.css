@@ -10,8 +10,8 @@ background-image: url(../img/patrick-tomasso-QMDap1TAu0g-unsplash.jpg);
 
 grid-template-areas:
     "hn hn hn"
-    "a1 a2 a4"
-    "a1 a2 a5"
+    "te te te"
+    "te te te"
     "fo fo fo"
     ;
  
@@ -32,44 +32,17 @@ grid-template-areas:
     column-gap: 5px;
     background-color:   moccasin;
 }
-
-.articel1{
-    grid-area: a1;
-    height: 100vh;
-    width: 95%;
-}
-
-#Agare{
-    height: 300px;
-    width: 250px;
-}
-.articel2{
-    grid-area: a2;
-    height: 98%;
-    width: auto;
-    background-color: navajowhite;
-}
 menu{
     grid-area: ar;
-    
     width: 97.5%;
     height: 202px;
 }
-
-.articel4{
-    grid-area: a4;
-    height: 50vh;
-    width: 95%;
-    background-color: moccasin;
-}
-.articel5{
-    grid-area: a5;
-    height: 50vh;
-    width: 95%;
-    background-color: navajowhite;
-    font-style: italic;
-    font-size: 24px;
-    align-content: center;
+.text{
+    grid-area: te;
+    height: 900px;
+    width: 800px;
+    background-color:   moccasin;
+    align-self: middle;
 }
 
 .footer{
@@ -81,10 +54,6 @@ menu{
 #logo{
     grid-area: lo;
     height: auto;
-    width: 100%;
-}    
-#bästa{
-    height: 600px;
     width: 100%;
 }
 
@@ -108,4 +77,9 @@ menu{
 
 .meny:hover {
     color: red;
+}
+
+#Agare{
+    height: 300px;
+    width: 250px;
 }
